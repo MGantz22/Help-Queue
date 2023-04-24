@@ -72,6 +72,7 @@ class TicketControl extends React.Component {
     if( this.state.editing) {
       currentlyVisibleState = <EditTicketForm ticket = {this.state.selectedTicket} onEditTicket = {this.handleEditingTicketInList} />
       buttonText = "Return to Ticket List";
+      
     } else if (this.state.selectedTicket != null) {
       currentlyVisibleState = 
       <TicketDetail 
