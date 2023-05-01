@@ -10,13 +10,13 @@ const reducer = (state = {}, action) => {
         id: id
       }
     });
-    case 'DELETE_TICKET':
-    let newState = { ...state };
+  case 'DELETE_TICKET':
+    const newState = { ...state };
     delete newState[id];
     return newState;
-    default:
-  return state;
+  default:
+    return state;
   }
 };
 
-export default reducer; 
+export default reducer;
